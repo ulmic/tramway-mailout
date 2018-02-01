@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = Tramway::Mailout::VERSION
   s.authors     = ["Pavel Kalashnikov"]
   s.email       = ["kalashnikovisme@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Tramway::Mailout."
-  s.description = "TODO: Description of Tramway::Mailout."
+  s.homepage    = "https://github.com/kalashnikovisme/tramway-mailout"
+  s.summary     = "Rails Engine for your mailouts"
+  s.description = "Rails Engine for your mailouts"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
