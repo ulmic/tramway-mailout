@@ -4,7 +4,7 @@ class Tramway::Mailout::MailingJob < ActiveJob::Base
   def perform(contacts, template, mailer, &block)
     contacts.each_slice(100) do |combination|
       combination.each do |contact|
-        mailer.delay.send :just_message, contact.email, template.title, template.body
+        mailer.constantize.delay.send :just_message, contact.email, template.title, template.body
         yield if block_given?
       end
     end
