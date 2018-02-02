@@ -1,9 +1,10 @@
 PATH
   remote: .
   specs:
-    tramway-mailout (0.1.0)
+    tramway-mailout (0.1.0.1)
       rails (~> 5.1.4)
       sidekiq
+      tramway-core
 
 GEM
   remote: https://rubygems.org/
@@ -111,6 +112,8 @@ GEM
       sprockets (>= 3.0.0)
     thor (0.20.0)
     thread_safe (0.3.6)
+    tramway-core (0.2)
+      rails (~> 5.1.4)
     tzinfo (1.2.4)
       thread_safe (~> 0.1)
     websocket-driver (0.6.5)
