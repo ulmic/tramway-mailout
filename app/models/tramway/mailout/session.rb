@@ -30,7 +30,7 @@ module Tramway::Mailout
 
       after_transition aborted: :during do |session|
         ::Tramway::Mailout::JobProxy.perform_job ::Tramway::Mailout::MailingJob,
-          :later,
+          :now,
           session.campaign.contacts,
           session.campaign.strategy.touches.first.mail_template,
           ::Tramway::Mailout::ApplicationMailer
