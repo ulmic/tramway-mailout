@@ -1,9 +1,9 @@
 module Tramway
   module Mailout
     class ApplicationMailer < ActionMailer::Base
-      def just_message(email, title, body)
+      def just_message(receiver_email, sender_email, title, body)
         @body = body
-        mail from: 'Test', to: email, subject: title
+        mail from: sender_email, to: receiver.email, subject: title
       end
     end
   end

@@ -33,7 +33,8 @@ module Tramway::Mailout
           :now,
           session.campaign.contacts,
           session.campaign.strategy.touches.first.mail_template,
-          ::Tramway::Mailout::ApplicationMailer
+          ::Tramway::Mailout::ApplicationMailer,
+          session.campaign.sender_email
       end
     end
 
